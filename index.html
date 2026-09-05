@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page - Victor Sanabria</title>
+    <meta name="description" content="WDD 231 Course Home Page for Victor Sanabria showcasing web development projects, certificate courses, and assignments.">
+    <meta name="author" content="Victor Sanabria">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript Modules (Deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Victor Sanabria</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="card">
+            <h2>About Me / Coursework</h2>
+            <p>Welcome to my WDD 231 course home page. Here you will find links to assignments, projects, and a dynamic list of certificate courses.</p>
+        </section>
+
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            <div id="course-container"></div>
+            <p id="total-credits"></p>
+        </section>
+
+        <section class="card">
+            <h2>Italy / Local Info</h2>
+            <p>Currently studying and working, applying modern frontend development practices to real-world scenarios.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="socials">
+            <a href="https://github.com/viktorsanabria" target="_blank" rel="noopener">GitHub</a> | 
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p>&copy;<span id="currentyear"></span> | Victor Sanabria | Italy</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
