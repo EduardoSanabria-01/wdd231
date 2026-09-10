@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Tech Solutions",
+      "address": "123 Main St, Colleferro",
+      "phone": "+39 06 1234567",
+      "website": "https://techsolutions.example.com",
+      "image": "tech-solutions.png",
+      "membership": 3,
+      "description": "IT consulting and software development services."
+    },
+    {
+      "name": "Alpine Logistics",
+      "address": "45 Mountain Rd, Colleferro",
+      "phone": "+39 06 7654321",
+      "website": "https://alpinelogistics.example.com",
+      "image": "alpine-logistics.png",
+      "membership": 2,
+      "description": "Freight transportation and supply chain management."
+    },
+    {
+      "name": "Bella Vista Hotel",
+      "address": "89 Sunset Blvd, Colleferro",
+      "phone": "+39 06 9876543",
+      "website": "https://bellavistahotel.example.com",
+      "image": "bella-vista.png",
+      "membership": 3,
+      "description": "Luxury accommodation and event hosting."
+    },
+    {
+      "name": "Cafe Roma",
+      "address": "12 Piazza Centrale, Colleferro",
+      "phone": "+39 06 5551234",
+      "website": "https://caferoma.example.com",
+      "image": "cafe-roma.png",
+      "membership": 1,
+      "description": "Traditional Italian coffee and pastry shop."
+    },
+    {
+      "name": "EcoBuild Construction",
+      "address": "77 Green Ave, Colleferro",
+      "phone": "+39 06 4448888",
+      "website": "https://ecobuild.example.com",
+      "image": "ecobuild.png",
+      "membership": 2,
+      "description": "Sustainable architectural planning and construction."
+    },
+    {
+      "name": "Nova Marketing",
+      "address": "33 Innovation Way, Colleferro",
+      "phone": "+39 06 2223333",
+      "website": "https://novamarketing.example.com",
+      "image": "nova-marketing.png",
+      "membership": 1,
+      "description": "Digital marketing and social media brand growth."
+    },
+    {
+      "name": "Vertex Design Studio",
+      "address": "55 Creative St, Colleferro",
+      "phone": "+39 06 1119999",
+      "website": "https://vertexdesign.example.com",
+      "image": "vertex-design.png",
+      "membership": 3,
+      "description": "Graphic design, web branding, and vector assets."
+    }
+  ]
+}
