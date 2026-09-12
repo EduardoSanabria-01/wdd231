@@ -37,7 +37,7 @@ const displayMembers = (companies) => {
         let membership = document.createElement('p');
 
         logo.setAttribute('src', `images/${company.image}`);
-        logo.setAttribute('alt`, `Logo of ${company.name}`);
+        logo.setAttribute('alt', `Logo of ${company.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '120');
         logo.setAttribute('height', '120');
