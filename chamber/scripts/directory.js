@@ -1,4 +1,4 @@
-const url = '/wdd231/chamber/data/members.json';
+const url = 'data/members.json';
 const membersContainer = document.querySelector('#members-container');
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
