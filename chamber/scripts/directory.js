@@ -1,4 +1,4 @@
-const url = 'data/members.json';
+const url = './data/members.json';
 const membersContainer = document.querySelector('#members-container');
 
 async function getMembersData() {
@@ -19,8 +19,8 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         
         let logo = document.createElement('img');
-        // AQUÍ ESTÁ EL CAMBIO CLAVE CON EL ./
-        logo.setAttribute('src', `./${member.image}`);
+        // Usamos la ruta absoluta exacta desde la raíz de GitHub Pages
+        logo.setAttribute('src', `/wdd231/chamber/${member.image}`);
         logo.setAttribute('alt', `Logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
