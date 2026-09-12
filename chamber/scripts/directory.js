@@ -19,7 +19,8 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         
         let logo = document.createElement('img');
-        logo.setAttribute('src', member.image);
+        // AQUÍ ESTÁ EL CAMBIO CLAVE CON EL ./
+        logo.setAttribute('src', `./${member.image}`);
         logo.setAttribute('alt', `Logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
