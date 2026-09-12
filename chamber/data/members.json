@@ -12,7 +12,7 @@
     "address": "45 Mountain Rd, Colleferro",
     "phone": "+39 06 7654321",
     "website": "https://alpinelogistics.example.com",
-    "image": "images/alpine.jpg",
+    "image": "images/alpine-logistics.jpg",
     "membershipLevel": "Silver Member"
   },
   {
@@ -20,7 +20,7 @@
     "address": "89 Sunset Blvd, Colleferro",
     "phone": "+39 06 9876543",
     "website": "https://bellavistahotel.example.com",
-    "image": "images/hotel.jpg",
+    "image": "images/bella-vista.jpg",
     "membershipLevel": "Gold Member"
   },
   {
@@ -28,7 +28,7 @@
     "address": "12 Piazza Centrale, Colleferro",
     "phone": "+39 06 5551234",
     "website": "https://caferoma.example.com",
-    "image": "images/cafe.jpg",
+    "image": "images/cafe-roma.jpg",
     "membershipLevel": "Member"
   },
   {
@@ -44,7 +44,7 @@
     "address": "33 Innovation Way, Colleferro",
     "phone": "+39 06 2223333",
     "website": "https://novamarketing.example.com",
-    "image": "images/nova.jpg",
+    "image": "images/nova-marketing.jpg",
     "membershipLevel": "Member"
   },
   {
@@ -52,7 +52,7 @@
     "address": "90 Creative St, Colleferro",
     "phone": "+39 06 1119999",
     "website": "https://vertexdesign.example.com",
-    "image": "images/vertex.jpg",
+    "image": "images/vertex-design.jpg",
     "membershipLevel": "Gold Member"
   }
 ]
