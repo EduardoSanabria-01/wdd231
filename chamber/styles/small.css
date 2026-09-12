@@ -60,7 +60,7 @@ nav button {
 }
 
 .menu-items li a.active {
-    background-color: #ff6e40;
+    background-color: #d35400; /* Un naranja más oscuro con buen contraste */
     border-radius: 4px;
 }
 
