@@ -4,7 +4,7 @@
     "address": "123 Main St, Colleferro",
     "phone": "+39 06 1234567",
     "website": "https://techsolutions.example.com",
-    "image": "images/tech.jpg",
+    "image": "images/tech-solutions.jpg",
     "membershipLevel": "Gold Member"
   },
   {
@@ -35,7 +35,7 @@
     "name": "EcoBuild Construction",
     "address": "77 Green Ave, Colleferro",
     "phone": "+39 06 4448888",
-    "website": "https://ecobuild.example.com",
+    "website": "https://ecobuild.jpg",
     "image": "images/ecobuild.jpg",
     "membershipLevel": "Silver Member"
   },
