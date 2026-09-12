@@ -1,58 +1,46 @@
 const url = 'data/members.json';
 const membersContainer = document.querySelector('#members-container');
-const gridButton = document.querySelector('#grid');
-const listButton = document.querySelector('#list');
-const menuButton = document.querySelector('#menu-button');
-const menuItems = document.querySelector('#menu-items');
-
-
-if (menuButton) {
-    menuButton.addEventListener('click', () => {
-        menuItems.classList.toggle('open');
-        menuButton.classList.toggle('open');
-    });
-}
-
 
 async function getMembersData() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        displayMembers(data.companies);
+        displayMembers(data);
     } catch (error) {
-        console.error('Error fetching members data:', error);
+        console.error('Error fetching members:', error);
     }
 }
 
+getMembersData();
 
-const displayMembers = (companies) => {
+const displayMembers = (members) => {
     membersContainer.innerHTML = '';
-    companies.forEach((company) => {
+    members.forEach((member) => {
         let card = document.createElement('section');
-        let logo = document.createElement('img');
-        let name = document.createElement('h3');
-        let address = document.createElement('p');
-        let phone = document.createElement('p');
-        let website = document.createElement('a');
-        let membership = document.createElement('p');
-
-        logo.setAttribute('src', `images/${company.image}`);
-        logo.setAttribute('alt', `Logo of ${company.name}`);
-        logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '120');
-        logo.setAttribute('height', '120');
-
-        name.textContent = company.name;
-        address.textContent = company.address;
-        phone.textContent = company.phone;
         
-        website.setAttribute('href', company.website);
-        website.setAttribute('target', '_blank');
-        website.textContent = company.website;
+        let logo = document.createElement('img');
+        logo.setAttribute('src', member.image);
+        logo.setAttribute('alt', `Logo of ${member.name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '100');
+        logo.setAttribute('height', '100');
 
-        let levelText = company.membership === 3 ? 'Gold Member' : company.membership === 2 ? 'Silver Member' : 'Member';
-        membership.textContent = `Level: ${levelText}`;
-        membership.classList.add(`level-${company.membership}`);
+        let name = document.createElement('h2');
+        name.textContent = member.name;
+
+        let address = document.createElement('p');
+        address.textContent = member.address;
+
+        let phone = document.createElement('p');
+        phone.textContent = member.phone;
+
+        let website = document.createElement('a');
+        website.setAttribute('href', member.website);
+        website.setAttribute('target', '_blank');
+        website.textContent = member.website;
+
+        let membership = document.createElement('p');
+        membership.textContent = `Level: ${member.membershipLevel}`;
 
         card.appendChild(logo);
         card.appendChild(name);
@@ -65,21 +53,15 @@ const displayMembers = (companies) => {
     });
 };
 
-if (gridButton && listButton) {
-    gridButton.addEventListener('click', () => {
-        membersContainer.classList.add('grid');
-        membersContainer.classList.remove('list');
-    });
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
 
-    listButton.addEventListener('click', () => {
-        membersContainer.classList.add('list');
-        membersContainer.classList.remove('grid');
-    });
-}
+gridButton.addEventListener('click', () => {
+    membersContainer.classList.add('grid');
+    membersContainer.classList.remove('list');
+});
 
-
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
-
-
-getMembersData();
+listButton.addEventListener('click', () => {
+    membersContainer.classList.add('list');
+    membersContainer.classList.remove('grid');
+});

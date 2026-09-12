@@ -1,22 +1,13 @@
-// Menú de navegación responsivo (Hamburguesa)
 const menuButton = document.querySelector('#menu-button');
-const menuItems = document.querySelector('#menu-items');
+const menuItems = document.querySelector('.menu-items');
 
-if (menuButton && menuItems) {
+if (menuButton) {
     menuButton.addEventListener('click', () => {
         menuItems.classList.toggle('open');
-        menuButton.classList.toggle('open');
     });
 }
 
-// Actualización automática del año en el Footer
-const currentYearElement = document.querySelector('#currentyear');
-if (currentYearElement) {
-    currentYearElement.textContent = new Date().getFullYear();
-}
-
-// Actualización automática de la fecha de última modificación en el Footer
-const lastModifiedElement = document.querySelector('#lastModified');
-if (lastModifiedElement) {
-    lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
+const lastModifiedSpan = document.querySelector('#lastModified');
+if (lastModifiedSpan) {
+    lastModifiedSpan.textContent = `Last Modification: ${document.lastModified}`;
 }
