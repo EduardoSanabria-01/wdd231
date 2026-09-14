@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - JavaScript Modules</title>
+    <link rel="stylesheet" href="styles/modules.css">
+</head>
+<body>
+    <main>
+        <h1 id="courseName"></h1>
+
+        <div class="selection">
+            <label for="sectionNumber">Section Number: </label>
+            <select id="sectionNumber">
+                <!-- Las opciones se llenarán dinámicamente con sections.mjs -->
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button id="enrollStudent">Enroll Student</button>
+            <button id="dropStudent">Drop Student</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Room</th>
+                    <th>Enrolled</th>
+                    <th>Days</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody id="sections">
+                <!-- Las filas de la tabla se llenarán dinámicamente con output.mjs -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Importante: type="module" y sin el atributo defer -->
+    <script type="module" src="scripts/modules.mjs"></script>
+</body>
+</html>
