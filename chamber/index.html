@@ -69,7 +69,8 @@
             <h2>Weather</h2>
             <div class="current-weather">
                 <figure>
-                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <!-- Se agregó un src temporal para evitar el error de atributo vacío -->
+                    <img id="weather-icon" src="images/hotel.jpg" alt="Weather Icon">
                 </figure>
                 <div class="weather-info">
                     <p class="temperature"><span id="current-temp">--</span>&deg;F</p>
@@ -83,10 +84,10 @@
             </div>
         </section>
 
-        <!-- Company Spotlights Section -->
-        <section class="spotlights-container">
+        <!-- Company Spotlights Section (Cambiado de section a div para evitar la advertencia de encabezado faltante) -->
+        <div class="spotlights-container">
             <!-- Dynamically populated via JavaScript -->
-        </section>
+        </div>
     </main>
 
     <footer>
