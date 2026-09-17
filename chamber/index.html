@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Chamber of Commerce home page featuring local business directory, current weather, events, and member spotlights.">
+    <meta name="author" content="Victor Eduardo Sanabria Diaz">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css" media="(min-width: 768px)">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/hotel.jpg" alt="Chamber Logo" class="logo">
+            <span class="site-title">Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="images/bella-vista.jpg" alt="Chamber Hero Image" class="hero-image">
+            <div class="hero-msg">
+                <h1>Welcome to the Chamber</h1>
+                <p>Connecting businesses, community, and growth opportunities.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </div>
+
+        <!-- Current Events Section -->
+        <section class="card events-card">
+            <h2>Current Events</h2>
+            <ul>
+                <li><strong>Annual Business Gala:</strong> October 15th at 7:00 PM</li>
+                <li><strong>Networking Breakfast:</strong> Every Tuesday at 8:30 AM</li>
+                <li><strong>Small Business Workshop:</strong> November 3rd</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="card weather-card">
+            <h2>Weather</h2>
+            <div class="current-weather">
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <figcaption></figcaption>
+                </figure>
+                <div class="weather-info">
+                    <p class="temperature"><span id="current-temp">--</span>&deg;F</p>
+                    <p id="weather-desc">Loading weather...</p>
+                </div>
+            </div>
+            <hr>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast-container" class="forecast-grid">
+                <!-- Forecast items will be injected via JS -->
+            </div>
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights-container">
+            <!-- Dynamically populated via JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Chamber of Commerce | Victor Eduardo Sanabria Diaz | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Scripts -->
+    <script src="scripts/chamber.js" type="module"></script>
+</body>
+</html>
