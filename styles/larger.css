@@ -1,26 +1,30 @@
-@media (min-width: 32.5rem) {
-    #menu {
-        display: none;
-    }
-
-    nav {
-        display: block;
-        position: static;
-        width: auto;
-        background: transparent;
-    }
-
-    .navigation {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .navigation li a {
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-
-    #course-container {
+@media (min-width: 768px) {
+    .home-grid {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "hero hero hero"
+            "events weather spotlights"
+            "spotlights spotlights spotlights";
+        gap: 2rem;
+    }
+
+    .hero {
+        grid-area: hero;
+    }
+
+    .events-card {
+        grid-area: events;
+    }
+
+    .weather-card {
+        grid-area: weather;
+    }
+
+    .spotlights-container {
+        grid-area: spotlights;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
