@@ -28,3 +28,9 @@
         gap: 2rem;
     }
 }
+@media screen and (min-width: 768px) {
+    .join-grid {
+        grid-template-columns: 2fr 1fr; /* 2 partes para el formulario, 1 parte para las tarjetas a la derecha */
+        align-items: start;
+    }
+}
