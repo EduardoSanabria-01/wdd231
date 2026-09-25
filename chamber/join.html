@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Join Application</title>
+    <meta name="description" content="Chamber of Commerce membership application form. Join our community of businesses.">
+    <meta name="author" content="Victor Eduardo Sanabria Diaz">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chamber of Commerce Join Page">
+    <meta property="og:description" content="Apply for chamber membership and grow your business network.">
+    <meta property="og:image" content="https://eduardosanabria-01.github.io/wdd231/chamber/images/bella-vista.jpg">
+    <meta property="og:url" content="https://eduardosanabria-01.github.io/wdd231/chamber/join.html">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/hotel.jpg" alt="Chamber Logo" class="logo">
+            <span class="site-title">Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+        
+        <div class="join-grid">
+            <!-- Form Section -->
+            <section class="form-section">
+                <form method="get" action="thankyou.html">
+                    <!-- Hidden Timestamp Field -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <label>First Name *
+                        <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label>Last Name *
+                        <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>Organizational Title
+                        <input type="text" name="orgtitle" title="At least 7 characters (alpha, hyphens, and spaces only)" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>Email Address *
+                        <input type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <label>Mobile Phone *
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label>Business/Organization Name *
+                        <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label>Membership Level *
+                        <select name="membership" required>
+                            <option value="" disabled selected>Select Membership Level</option>
+                            <option value="np">NP Membership (Non Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business/Organization Description
+                        <textarea name="description" title="Provide a brief description of your organization"></textarea>
+                    </label>
+
+                    <input type="submit" value="Sign Up" class="submit-btn">
+                </form>
+            </section>
+
+            <!-- Membership Cards Section (With Load Animation) -->
+            <aside class="membership-cards">
+                <h2>Membership Levels</h2>
+                
+                <div class="card-item animate-card">
+                    <h3>NP Membership</h3>
+                    <button type="button" class="modal-btn" data-modal="np-modal">View Benefits</button>
+                </div>
+
+                <div class="card-item animate-card">
+                    <h3>Bronze Membership</h3>
+                    <button type="button" class="modal-btn" data-modal="bronze-modal">View Benefits</button>
+                </div>
+
+                <div class="card-item animate-card">
+                    <h3>Silver Membership</h3>
+                    <button type="button" class="modal-btn" data-modal="silver-modal">View Benefits</button>
+                </div>
+
+                <div class="card-item animate-card">
+                    <h3>Gold Membership</h3>
+                    <button type="button" class="modal-btn" data-modal="gold-modal">View Benefits</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Modals (Dialog elements) -->
+    <dialog id="np-modal" class="membership-modal">
+        <h3>Non-Profit Membership Benefits</h3>
+        <p>Ideal for local non-profit organizations. Free of charge with access to basic networking events and community listings.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal" class="membership-modal">
+        <h3>Bronze Membership Benefits</h3>
+        <p>Includes basic business directory listing, monthly newsletter, and standard discounts on chamber events.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal" class="membership-modal">
+        <h3>Silver Membership Benefits</h3>
+        <p>Includes priority directory listing, discount on event tickets, and specialized small business training workshops.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal" class="membership-modal">
+        <h3>Gold Membership Benefits</h3>
+        <p>Maximum visibility with homepage company spotlight positions, VIP event access, and premier advertising opportunities.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Chamber of Commerce | Victor Eduardo Sanabria Diaz | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/chamber.js" type="module"></script>
+</body>
+</html>

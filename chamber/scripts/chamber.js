@@ -151,3 +151,56 @@ function displaySpotlights(members) {
 if (spotlightsContainer) {
     getSpotlightMembers();
 }
+// --- Timestamp for Join Form ---
+const timestampField = document.querySelector('#timestamp');
+if (timestampField) {
+    timestampField.value = new Date().toISOString();
+}
+
+// --- Modals Logic for Join Page ---
+const modalButtons = document.querySelectorAll('.modal-btn');
+modalButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modalId = btn.getAttribute('data-modal');
+        const modal = document.querySelector(`#${modalId}`);
+        if (modal) modal.showModal();
+    });
+});
+
+const closeButtons = document.querySelectorAll('.close-modal');
+closeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modal = btn.closest('dialog');
+        if (modal) modal.close();
+    });
+});
+
+// --- Thank You Page Data Display ---
+const resultsContainer = document.querySelector('#results');
+if (resultsContainer) {
+    const currentUrl = window.location.href;
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const firstName = urlParams.get('firstname') || 'N/A';
+    const lastName = urlParams.get('lastname') || 'N/A';
+    const email = urlParams.get('email') || 'N/A';
+    const phone = urlParams.get('phone') || 'N/A';
+    const organization = urlParams.get('organization') || 'N/A';
+    let timestamp = urlParams.get('timestamp') || new Date().toLocaleString();
+
+    // Clean up timestamp formatting if it's ISO
+    try {
+        timestamp = new Date(timestamp).toLocaleString();
+    } catch (e) {
+        // keep as is if parse fails
+    }
+
+    resultsContainer.innerHTML = `
+        <p><strong>First Name:</strong> ${firstName}</p>
+        <p><strong>Last Name:</strong> ${lastName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Mobile Phone:</strong> ${phone}</p>
+        <p><strong>Business / Organization:</strong> ${organization}</p>
+        <p><strong>Application Date & Time:</strong> ${timestamp}</p>
+    `;
+}
