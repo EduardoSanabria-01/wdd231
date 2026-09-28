@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Stage Lighting & Concert Production</title>
+    <meta name="description" content="Site plan document for Stage Lighting and Concert Production informational website.">
+    <meta name="author" content="Victor Eduardo Sanabria Diaz">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Color Scheme Applied Exclusively --- */
+        :root {
+            --primary-color: #0f172a;   /* Dark Slate / Stage Black */
+            --secondary-color: #f59e0b; /* Amber / Stage Spotlight Glow */
+            --accent-color: #38bdf8;    /* Electric Cyan / Lighting Accent */
+            --bg-color: #f8fafc;        /* Light Background */
+            --text-color: #334155;      /* Dark Text */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .primary-box { background-color: var(--primary-color); }
+        .secondary-box { background-color: var(--secondary-color); }
+        .accent-box { background-color: var(--accent-color); }
+
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .wireframe-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .wireframe-card {
+            border: 2px dashed #cbd5e1;
+            padding: 1rem;
+            text-align: center;
+            background-color: #f1f5f9;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project Site Plan</h1>
+        <p>Stage Lighting & Concert Production</p>
+        <p><strong>Developer:</strong> Victor Eduardo Sanabria Diaz</p>
+    </header>
+
+    <main>
+        <!-- Site Name Section -->
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>Site Name:</strong> Apex Stage & Concert Tech</p>
+            <p><strong>Reasoning:</strong> This name represents a modern platform focused on professional concert production, event technology, and stage lighting design.</p>
+            <p><strong>Optional Domain Availability:</strong> <code>apex-stage-tech.org</code></p>
+        </section>
+
+        <!-- Site Purpose Section -->
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>The website serves as an informational hub for live event setup, concert production technology, and modern stage lighting design. It provides educational resources, equipment guides (such as LED bars and controllers), and consultation request options for event organizers and aspiring technicians.</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section>
+            <h2>3. Target Audience Scenarios</h2>
+            <p>Visitors to the site will typically look to answer the following questions:</p>
+            <ul>
+                <li>What type of stage lighting equipment is best suited for small indoor concert venues?</li>
+                <li>Where can I find technical specifications and setup guides for DMX controllers?</li>
+                <li>How do I request a professional lighting design consultation for an upcoming live event?</li>
+            </ul>
+        </section>
+
+        <!-- Color Scheme Section -->
+        <section>
+            <h2>4. Color Scheme</h2>
+            <p>The chosen color palette reflects a professional concert atmosphere (dark stage tones paired with vibrant stage lighting accents):</p>
+            <ul>
+                <li><span class="color-box primary-box"></span><strong>Primary Color (#0f172a - Dark Slate / Stage Black):</strong> Used for headers, primary backgrounds, and major containers.</li>
+                <li><span class="color-box secondary-box"></span><strong>Secondary Color (#f59e0b - Amber / Stage Spotlight):</strong> Used for headings, borders, and call-to-action highlights.</li>
+                <li><span class="color-box accent-box"></span><strong>Accent Color (#38bdf8 - Electric Cyan):</strong> Used for interactive elements and subtle highlights.</li>
+            </ul>
+        </section>
+
+        <!-- Typography Section -->
+        <section>
+            <h2>5. Typography</h2>
+            <p>The project utilizes two clean, modern Google Fonts to ensure readability and aesthetic appeal:</p>
+            <ul>
+                <li><strong>Heading Font:</strong> <code>'Montserrat', sans-serif</code> — Applied to all main titles, headers, and section names for a bold, professional look.</li>
+                <li><strong>Body Font:</strong> <code>'Roboto', sans-serif</code> — Applied to paragraphs, lists, and general body text to guarantee maximum readability.</li>
+            </ul>
+        </section>
+
+        <!-- Wireframe Section -->
+        <section>
+            <h2>6. Wireframes</h2>
+            <p>Below is the structural layout plan for the home page across different screen sizes:</p>
+            <div class="wireframe-grid">
+                <div class="wireframe-card">
+                    <h3>Mobile View</h3>
+                    <p>[ Header & Logo ]</p>
+                    <hr>
+                    <p>[ Hamburger Menu ]</p>
+                    <hr>
+                    <p>[ Hero Banner & Intro ]</p>
+                    <hr>
+                    <p>[ Stacked Equipment Cards ]</p>
+                    <hr>
+                    <p>[ Footer ]</p>
+                </div>
+                <div class="wireframe-card">
+                    <h3>Desktop View</h3>
+                    <p>[ Header Logo + Horizontal Navigation Menu ]</p>
+                    <hr>
+                    <p>[ Wide Hero Banner & Featured Content ]</p>
+                    <hr>
+                    <p>[ Multi-column Equipment & Services Grid ]</p>
+                    <hr>
+                    <p>[ Footer ]</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
