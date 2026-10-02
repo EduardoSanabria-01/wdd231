@@ -34,3 +34,29 @@
         align-items: start;
     }
 }
+/* Grid Areas nombradas para pantallas grandes */
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "sidebar card1 card2"
+            "sidebar card3 card4"
+            "sidebar card5 card6"
+            "sidebar card7 card8";
+        gap: 20px;
+    }
+
+    .sidebar-info {
+        grid-area: sidebar;
+    }
+
+    .card-1 { grid-area: card1; }
+    .card-2 { grid-area: card2; }
+    .card-3 { grid-area: card3; }
+    .card-4 { grid-area: card4; }
+    .card-5 { grid-area: card5; }
+    .card-6 { grid-area: card6; }
+    .card-7 { grid-area: card7; }
+    .card-8 { grid-area: card8; }
+}
