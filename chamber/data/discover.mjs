@@ -45,6 +45,6 @@ export const discoverItems = [
     "title": "Local Artisanal Market",
     "address": "Via dei Mille, 00034 Colleferro RM, Italy",
     "description": "A lively weekly market showcasing fresh regional produce, traditional foods, and local crafts from the Lazio region.",
-    "photo": "images/market.webp"
+    "photo": "images/artisan-market.jpg"
   }
 ];
