@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1. Render Discover Cards
     const cardsContainer = document.getElementById("cards-container");
 
-    discoverItemsforEach((item, index) => {
+    discoverItems.forEach((item, index) => {
         const card = document.createElement("section");
         card.classList.add(`card-${index + 1}`, "discover-card");
 
@@ -43,6 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("lastVisit_date", now);
 
     // Footer Dates
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+    const currentYearEl = document.getElementById("currentyear");
+    if (currentYearEl) {
+        currentYearEl.textContent = new Date().getFullYear();
+    }
+    
+    const lastModifiedEl = document.getElementById("lastModified");
+    if (lastModifiedEl) {
+        lastModifiedEl.textContent = `Last Modification: ${document.lastModified}`;
+    }
 });
