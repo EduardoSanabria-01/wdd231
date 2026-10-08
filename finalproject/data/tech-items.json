@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Quantum Core X1",
+    "category": "Processor",
+    "spec": "128 Qubits / 5.2 GHz",
+    "description": "Next-generation quantum processing unit designed for high-end enterprise simulations and AI model training.",
+    "image": "images/hotel.jpg"
+  },
+  {
+    "title": "Neuralink Interface v3",
+    "category": "Biometrics",
+    "spec": "Latency: < 1ms",
+    "description": "Ultra-low latency brain-computer interface optimized for seamless digital navigation and neural feedback.",
+    "image": "images/alpine-logistics.jpg"
+  },
+  {
+    "title": "Titanium Server Rack Pro",
+    "category": "Hardware",
+    "spec": "64TB NVMe / Dual PSU",
+    "description": "Enterprise-grade cloud server architecture built for maximum uptime, high data throughput, and security.",
+    "image": "images/artisan-market.jpg"
+  },
+  {
+    "title": "HoloLens Vision Matrix",
+    "category": "Displays",
+    "spec": "8K Per Eye / 120Hz",
+    "description": "Immersive augmented reality headset engineered for industrial design, engineering, and remote collaboration.",
+    "image": "images/bella-vista.jpg"
+  },
+  {
+    "title": "CyberShield AI Firewall",
+    "category": "Security",
+    "spec": "Zero-Day Threat Block",
+    "description": "Autonomous security protocol utilizing deep learning algorithms to neutralize network intrusion vectors instantly.",
+    "image": "images/cafe-roma.jpg"
+  },
+  {
+    "title": "AeroDrone Autonomous X",
+    "category": "Robotics",
+    "spec": "Flight Time: 4.5 Hours",
+    "description": "Heavy-duty autonomous logistics drone designed for rapid cargo transport across urban and rural zones.",
+    "image": "images/ecobuild.jpg"
+  },
+  {
+    "title": "Plasma Solid-State Battery",
+    "category": "Energy",
+    "spec": "10,000 mAh / 10-Min Charge",
+    "description": "Revolutionary energy storage solution providing unprecedented battery life and thermal stability for mobile units.",
+    "image": "images/nova-marketing.jpg"
+  },
+  {
+    "title": "OmniSense Environmental Node",
+    "category": "IoT",
+    "spec": "Range: 15km / IP68",
+    "description": "Smart sensor array deployed for real-time tracking of air quality, temperature, and structural integrity.",
+    "image": "images/tech-solutions.jpg"
+  },
+  {
+    "title": "Vortex Hydro Cooling System",
+    "category": "Cooling",
+    "spec": "Thermal Dissipation: 500W",
+    "description": "Advanced liquid cooling block engineered to maintain optimal operational temperatures under heavy workloads.",
+    "image": "images/vertex-design.jpg"
+  },
+  {
+    "title": "Matrix Edge Gateway",
+    "category": "Networking",
+    "spec": "Wi-Fi 7 / 10G Ethernet",
+    "description": "High-performance edge routing device ensuring ultra-fast data transfer speeds for connected smart facilities.",
+    "image": "images/hotel.jpg"
+  },
+  {
+    "title": "SynthVoice Audio Interface",
+    "category": "Hardware",
+    "spec": "32-bit Float / 192kHz",
+    "description": "Studio-grade digital audio processor featuring AI noise cancellation and zero-latency hardware monitoring.",
+    "image": "images/alpine-logistics.jpg"
+  },
+  {
+    "title": "Titan Solid Drive Array",
+    "category": "Storage",
+    "spec": "100TB Capacity / PCIe 5.0",
+    "description": "High-capacity flash storage subsystem built for massive data centers and high-speed media production.",
+    "image": "images/artisan-market.jpg"
+  },
+  {
+    "title": "Spectra Laser Scanner",
+    "category": "Tools",
+    "spec": "Accuracy: 0.1mm",
+    "description": "High-precision 3D spatial scanner for rapid architectural mapping, reverse engineering, and virtual rendering.",
+    "image": "images/bella-vista.jpg"
+  },
+  {
+    "title": "Vanguard Exoskeleton",
+    "category": "Robotics",
+    "spec": "Payload Boost: +100kg",
+    "description": "Ergonomic motorized support suit designed to minimize physical strain for industrial and logistics workers.",
+    "image": "images/cafe-roma.jpg"
+  },
+  {
+    "title": "Nexus Smart Terminal",
+    "category": "Displays",
+    "spec": "OLED / Multi-Touch 4K",
+    "description": "Interactive command dashboard designed for central monitoring stations, control rooms, and operations hubs.",
+    "image": "images/ecobuild.jpg"
+  }
+]

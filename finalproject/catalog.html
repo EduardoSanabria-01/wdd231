@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Catalog</title>
+    <meta name="description" content="Explore our extensive catalog of 15 advanced tech items, hardware components, and enterprise solutions.">
+    <meta name="author" content="Victor Eduardo Sanabria Diaz">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/hotel.jpg" alt="Logo" class="logo-img">
+            <span>TechNova</span>
+        </div>
+        <button id="menu-btn" aria-label="Toggle Menu">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Technological Catalog</h1>
+        <p>Showing our 15 featured enterprise items fetched dynamically via JSON data.</p>
+        
+        <!-- Grid donde se inyectan los 15 elementos -->
+        <div id="catalog-grid" class="catalog-grid"></div>
+    </main>
+
+    <!-- Modal Dialog Requerido -->
+    <dialog id="details-modal">
+        <h2 id="modal-title" style="color: var(--primary); margin-bottom: 0.5rem;"></h2>
+        <p id="modal-desc" style="margin-bottom: 1rem;"></p>
+        <button id="close-modal" class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> TechNova Solutions | Victor Eduardo Sanabria Diaz | WDD 231</p>
+        <p><a href="https://youtu.be/TU_ENLACE_DE_VIDEO_AQUI" target="_blank">Project Video Demonstration</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
