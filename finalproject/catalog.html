@@ -7,6 +7,16 @@
     <meta name="description" content="Explore our extensive catalog of 15 advanced tech items, hardware components, and enterprise solutions.">
     <meta name="author" content="Victor Eduardo Sanabria Diaz">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="TechNova Solutions - Technological Catalog">
+    <meta property="og:description" content="Explore our extensive catalog of 15 advanced tech items, hardware components, and enterprise solutions.">
+    <meta property="og:image" content="https://eduardosanabria-01.github.io/wdd231/finalproject/images/hotel.jpg">
+    <meta property="og:url" content="https://eduardosanabria-01.github.io/wdd231/finalproject/catalog.html">
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
     <script type="module" src="scripts/main.js" defer></script>
@@ -31,14 +41,12 @@
         <h1>Technological Catalog</h1>
         <p>Showing our 15 featured enterprise items fetched dynamically via JSON data.</p>
         
-        <!-- Grid donde se inyectan los 15 elementos -->
         <div id="catalog-grid" class="catalog-grid"></div>
     </main>
 
-    <!-- Modal Dialog Requerido -->
     <dialog id="details-modal">
-        <h2 id="modal-title" style="color: var(--primary); margin-bottom: 0.5rem;"></h2>
-        <p id="modal-desc" style="margin-bottom: 1rem;"></p>
+        <h2 id="modal-title" class="modal-title-style"></h2>
+        <p id="modal-desc" class="modal-desc-style"></p>
         <button id="close-modal" class="close-modal">Close</button>
     </dialog>
 

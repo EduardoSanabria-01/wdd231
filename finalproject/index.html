@@ -7,10 +7,18 @@
     <meta name="description" content="Welcome to TechNova Solutions, your premier hub for cutting-edge technological innovations and hardware.">
     <meta name="author" content="Victor Eduardo Sanabria Diaz">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="TechNova Solutions">
-    <meta property="og:description" content="Discover advanced technological hardware and enterprise innovations.">
+    
+    <!-- Preconnect para Google Fonts requeridas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Social Metadata Completas -->
+    <meta property="og:title" content="TechNova Solutions - Advanced Hardware & Technology">
+    <meta property="og:description" content="Discover cutting-edge technological innovations, high-performance hardware, and enterprise solutions at TechNova Solutions.">
     <meta property="og:image" content="https://eduardosanabria-01.github.io/wdd231/finalproject/images/hotel.jpg">
     <meta property="og:url" content="https://eduardosanabria-01.github.io/wdd231/finalproject/index.html">
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
     <script type="module" src="scripts/main.js" defer></script>
@@ -33,10 +41,10 @@
 
     <main>
         <h1>Shaping the Future of Technology</h1>
-        <p id="visitor-msg" style="margin-bottom: 1.5rem; font-weight: bold; color: var(--secondary);"></p>
+        <p id="visitor-msg" class="visitor-msg-style"></p>
         <p>TechNova Solutions provides pioneering hardware, enterprise security solutions, and quantum architecture to empower modern industries globally. Explore our comprehensive catalog featuring 15 industry-leading hardware items designed for maximum performance.</p>
-        <div style="margin-top: 2rem;">
-            <a href="catalog.html" class="details-btn" style="text-decoration: none; display: inline-block;">View Full Catalog</a>
+        <div class="home-spacing">
+            <a href="catalog.html" class="details-btn">View Full Catalog</a>
         </div>
     </main>
 

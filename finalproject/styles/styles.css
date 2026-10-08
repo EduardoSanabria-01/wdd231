@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
 :root {
   --primary: #0f172a;
   --secondary: #2563eb;
@@ -29,9 +31,9 @@ h1 { color: var(--primary); margin-bottom: 1rem; font-size: 2rem; }
 .card:hover { transform: translateY(-5px); }
 .card img { width: 100%; height: 180px; object-fit: cover; }
 .card-content { padding: 1rem; display: flex; flex-direction: column; flex-grow: 1; }
-.card-content h3 { color: var(--primary); margin-bottom: 0.5s; font-size: 1.2rem; }
+.card-content h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.2rem; }
 .card-content p { font-size: 0.9rem; margin-bottom: 1rem; color: #64748b; }
-.details-btn { margin-top: auto; background: var(--secondary); color: var(--white); border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: 600; }
+.details-btn { margin-top: auto; background: var(--secondary); color: var(--white); border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; text-align: center; }
 .details-btn:hover { background: #1d4ed8; }
 
 /* Form styles */
@@ -42,10 +44,19 @@ h1 { color: var(--primary); margin-bottom: 1rem; font-size: 2rem; }
 .submit-btn { background: var(--secondary); color: var(--white); border: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: bold; width: 100%; }
 .submit-btn:hover { background: #1d4ed8; }
 
-/* Modal */
+/* Modal y Clases para corregir estilos inline */
 dialog { border: none; border-radius: 8px; padding: 2rem; width: 90%; max-width: 500px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
 dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
-.close-modal { background: #ef4444; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; margin-top: 1rem; cursor: pointer; }
+.modal-title-style { color: var(--primary); margin-bottom: 0.5rem; }
+.modal-desc-style { margin-bottom: 1rem; }
+.visitor-msg-style { margin-bottom: 1.5rem; font-weight: bold; color: var(--secondary); }
+.home-spacing { margin-top: 2rem; }
+.thankyou-main { text-align: center; padding: 3rem 1rem; }
+.thankyou-desc { font-size: 1.1rem; margin-bottom: 2rem; }
+
+/* Contraste corregido para el botón de cerrar modal (Cumple con WCAG AA) */
+.close-modal { background: #b91c1c; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; margin-top: 1rem; cursor: pointer; font-weight: bold; }
+.close-modal:hover { background: #991b1b; }
 
 footer { background: var(--primary); color: var(--white); text-align: center; padding: 1.5rem; margin-top: 3rem; font-size: 0.9rem; }
 footer a { color: var(--accent); text-decoration: underline; }
