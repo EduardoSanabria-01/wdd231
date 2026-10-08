@@ -90,4 +90,30 @@ document.addEventListener("DOMContentLoaded", () => {
       closeModal.addEventListener("click", () => modal.close());
     }
   }
+
+  // 6. Mostrar datos del formulario en thank-you.html con URLSearchParams
+  const resultsContainer = document.getElementById("results-container");
+  if (resultsContainer) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const fullname = urlParams.get("fullname");
+    const email = urlParams.get("email");
+    const message = urlParams.get("message");
+
+    if (fullname || email || message) {
+      resultsContainer.innerHTML = `
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); max-width: 500px; margin: 1.5rem auto; text-align: left;">
+          <p style="margin-bottom: 0.8rem;"><strong>Full Name:</strong> ${fullname ? escapeHtml(fullname) : "N/A"}</p>
+          <p style="margin-bottom: 0.8rem;"><strong>Email:</strong> ${email ? escapeHtml(email) : "N/A"}</p>
+          <p style="margin-bottom: 0;"><strong>Message:</strong> ${message ? escapeHtml(message) : "N/A"}</p>
+        </div>
+      `;
+    } else {
+      resultsContainer.innerHTML = "<p>No form submission data found.</p>";
+    }
+  }
+
+  // Función auxiliar de seguridad para prevenir inyecciones HTML básicas
+  function escapeHtml(str) {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  }
 });
