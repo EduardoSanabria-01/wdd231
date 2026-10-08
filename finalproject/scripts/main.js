@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("lastVisitDate", now);
   }
 
-  // 4. Carga de Datos JSON con Fetch API y try...catch (Para la página del catálogo)
+  // 4. Carga de Datos JSON con Fetch API y try...catch
   const catalogGrid = document.getElementById("catalog-grid");
   if (catalogGrid) {
     async function loadTechData() {
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayItems(items) {
       catalogGrid.innerHTML = "";
-      // Usando array methods para procesar
       items.forEach(item => {
         const card = document.createElement("div");
         card.className = "card";
@@ -66,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
         catalogGrid.appendChild(card);
       });
 
-      // Configurar Modal Dialog
       setupModal();
     }
 

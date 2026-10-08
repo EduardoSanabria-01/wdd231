@@ -1,5 +1,4 @@
 @media (min-width: 1025px) {
-  /* Efecto hover avanzado para escritorio requerido por la rúbrica */
   .card img {
     transition: transform 0.5s ease;
   }
